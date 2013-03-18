@@ -1,0 +1,36 @@
+{
+    "name" : "connect-flake",
+    "description" : "Connect middleware to assign a Flake ID to every request.",
+    "version" : "0.1.0",
+    "author" : {
+        "name" : "Andrew Chilton",
+        "email" : "andychilton@gmail.com",
+        "url" : "http://chilts.org/blog/"
+    },
+    "homepage" : "https://github.com/chilts/connect-flake",
+    "main" : "./connect-flake.js",
+    "devDependencies": {
+        "tap": "0.4.x"
+    },
+    "dependencies" : {
+        "flake" : "0.x.x"
+    },
+    "repository": {
+        "type" : "git",
+        "url": "git://github.com/chilts/connect-flake.git"
+    },
+   "bugs" : {
+        "url" : "http://github.com/chilts/connect-flake/issues",
+        "mail" : "andychilton@gmail.com"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://github.com/chilts/connect-flake/raw/master/LICENSE"
+    }],
+    "keywords": [
+        "connect", "express", "middleware", "flake"
+    ],
+    "scripts" : {
+        "test" : "./node_modules/.bin/tap test/"
+    }
+}
