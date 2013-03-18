@@ -19,10 +19,10 @@ Connect middleware which assigns a Flake ID to every request.
     // load connect-flake
     var flake = require('connect-flake');
 
-    // use the middleware which sets req.uuid
+    // use the middleware which sets req.flake
     app.use(flake('eth0'));
 
-    // add a dynamic helper so the view can see #{uuid}
+    // add a dynamic helper so the view can see #{req.flake}
     app.all(function(req, res, next) {
         res.locals.flake = req.flake;
     });
@@ -49,7 +49,7 @@ Send yourself the Flake ID of the (failed) request so you can find it quicker:
 
 You may even store the requests and/or errors in your database:
 
-    sql> SELECT * FROM request WHERE uuid = '013c7990a044-0000-08ff-00027298bef9';
+    sql> SELECT * FROM request WHERE id = '013c7990a044-0000-08ff-00027298bef9';
 
 And there are many other uses too.
 
