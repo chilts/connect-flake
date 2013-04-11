@@ -13,7 +13,7 @@
         "tap": "0.4.x"
     },
     "dependencies" : {
-        "flake" : ">= 0.4.2"
+        "flake" : ">= 0.4.x"
     },
     "repository": {
         "type" : "git",
