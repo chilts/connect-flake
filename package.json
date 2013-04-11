@@ -1,7 +1,7 @@
 {
     "name" : "connect-flake",
     "description" : "Connect middleware to assign a Flake ID to every request.",
-    "version" : "0.1.1",
+    "version" : "0.1.2",
     "author" : {
         "name" : "Andrew Chilton",
         "email" : "andychilton@gmail.com",
